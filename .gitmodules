@@ -1,0 +1,6 @@
+[submodule "libs/Tetris"]
+	path = libs/Tetris
+	url = https://github.com/T-vK/NodeMCU-Tetris.git
+[submodule "libs/LedMatrix"]
+	path = libs/LedMatrix
+	url = https://github.com/T-vK/LedMatrix.git
