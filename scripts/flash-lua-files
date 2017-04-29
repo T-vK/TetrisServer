@@ -1,0 +1,6 @@
+#/bin/bash
+
+nodemcu-tool reset
+nodemcu-tool upload libs/*/*.lua
+nodemcu-tool upload *.lua
+nodemcu-tool reset

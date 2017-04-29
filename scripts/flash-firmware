@@ -1,0 +1,16 @@
+#!/bin/bash
+
+serialDevicePattern="/dev/ttyUSB*"
+serialDevices=( $serialDevicePattern )
+serialDevice="${serialDevices[0]}"
+
+echo "serial device detected at $serialDevice"
+
+sudo docker run -t -i -u esp \
+--device=$serialDevice \
+-v $(pwd)/firmware:/home/esp/shared_project \
+tavk/esp-sdk:0.1.0 \
+esptool.py --port $serialDevice \
+write_flash -fm dio \
+0x00000 nodemcu.bin \
+0x3fc000 esp_init_data_default.bin

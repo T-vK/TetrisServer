@@ -1,0 +1,4 @@
+#/bin/bash
+nodemcu-tool reset
+sudo nodemcu-tool upload init.lua
+nodemcu-tool reset

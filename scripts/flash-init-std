@@ -1,0 +1,5 @@
+#/bin/bash
+
+nnodemcu-tool reset
+nodemcu-tool upload --baud 115200 --connection-delay 300 init.lua
+nodemcu-tool reset 

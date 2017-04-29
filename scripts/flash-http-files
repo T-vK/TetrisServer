@@ -1,0 +1,6 @@
+#/bin/bash
+
+nodemcu-tool reset
+nodemcu-tool upload http/*
+nodemcu-tool upload http/*/*
+nodemcu-tool reset
