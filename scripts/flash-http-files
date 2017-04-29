@@ -1,6 +1,8 @@
 #/bin/bash
 
 nodemcu-tool reset
+sleep 2
 nodemcu-tool upload http/*
+sleep 1
 nodemcu-tool upload http/*/*
 nodemcu-tool reset

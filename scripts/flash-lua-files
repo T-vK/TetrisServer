@@ -1,6 +1,8 @@
 #/bin/bash
 
 nodemcu-tool reset
+sleep 2
 nodemcu-tool upload libs/*/*.lua
+sleep 1
 nodemcu-tool upload *.lua
 nodemcu-tool reset
