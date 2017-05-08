@@ -4,3 +4,7 @@
 [submodule "libs/LedMatrix"]
 	path = libs/LedMatrix
 	url = https://github.com/T-vK/LedMatrix.git
+[submodule "libs/HttpServer"]
+	path = libs/HttpServer
+	url = https://github.com/T-vK/NodeMCU-HttpServer.git
+	branch = dev

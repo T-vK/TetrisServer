@@ -1,5 +1,5 @@
 #/bin/bash
 nodemcu-tool reset
 sleep 2
-sudo nodemcu-tool upload init.lua
+nodemcu-tool upload init.lua
 nodemcu-tool reset
